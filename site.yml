@@ -1,0 +1,7 @@
+- hosts: ubuntu_lab_hosts
+  tasks:
+    - name:  install chrony
+      ansible.builtin.apt:
+        name:  chrony
+        state:  latest
+        update_cache:  yes
